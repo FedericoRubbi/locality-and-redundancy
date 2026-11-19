@@ -1,0 +1,18 @@
+accelerator:
+  mixed_precision: 'no'
+experiment_name: ablation-nested_dropout
+dropout:
+  schedule_type: geometric
+  rho: 0.8
+training:
+  sign_bias: 0.3
+  batch_size: 1024
+  dataset: cifar10
+  embed_dim: 128
+  epochs: 30
+  lr: 0.005
+  num_workers: 2
+  temperature: 0.2
+wandb:
+  entity: null
+  project: rde-ablation

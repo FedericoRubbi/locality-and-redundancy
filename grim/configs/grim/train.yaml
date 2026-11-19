@@ -1,0 +1,28 @@
+run_name: "tinyimagenet_resnet50_n2048_t8"
+model:
+  embed_dim: 2048
+  adapter_type: "resnet"
+  resnet_arch: "resnet50"
+  resnet_pretrained: false
+  resnet_small_input: true
+  delta: 1.0
+  time_dim: 128
+  num_blocks: 4
+  mlp_ratio: 4
+  dropout: 0.1
+adapter:
+  epochs: 200
+  lr: 0.001
+training:
+  dataset: "tiny_imagenet"
+  num_workers: 11
+  batch_size: 1024
+  epochs_per_step: 30
+  lr: 0.0005
+  T: 8
+  temperature: 0.1
+  k_anchor: 4
+  anchor_weight: 1.0
+decoder:
+  epochs: 10
+  lr: 0.0005

@@ -1,0 +1,27 @@
+__pycache__/
+*.pyc
+.venv/
+# datasets downloaded on first use
+itmf/data/
+fedsym/data/
+grim/data/*
+!grim/data/*.py
+dcsm/data/*
+!dcsm/data/*.py
+vit/data/*
+!vit/data/*.py
+!vit/data/imagenet100/
+vit/data/imagenet100/*
+!vit/data/imagenet100/Labels.json
+# run outputs
+logs/
+plots/
+results/
+checkpoints/
+wandb/
+*.pt
+*.pth
+*.ckpt
+*.db-journal
+paper/figures/
+paper/tables/

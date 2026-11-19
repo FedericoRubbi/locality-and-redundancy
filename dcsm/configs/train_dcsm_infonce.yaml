@@ -1,0 +1,35 @@
+experiment_name: "dcsm_diffusion_infonce_v0"
+
+encoder:
+  patch_size: 2
+  image_size: 32
+  embed_dim: 384
+  depth: 4
+  num_heads: 8
+  mlp_ratio: 2.0
+
+denoiser:
+  embed_dim: 384
+  num_blocks: 6
+
+diffusion:
+  num_timesteps: 1000
+
+data:
+  batch_size: 1024
+  num_workers: 4
+
+training:
+  variant: "infonce"
+  epochs: 100
+  learning_rate: 3.0e-4
+  mixed_precision: "bf16"
+  temperature: 0.1
+  lambda_info: 0.1
+
+wandb:
+  project: "dcsm"
+  entity: null
+
+info_nce:
+  rho_max: 10.0

@@ -1,0 +1,9 @@
+torch
+torchvision
+accelerate
+wandb
+tqdm
+einops
+pyyaml
+matplotlib
+scikit-learn

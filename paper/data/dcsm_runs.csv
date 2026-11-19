@@ -1,0 +1,10 @@
+run,experiment,objective,epochs_planned,kind,epochs_done,final_loss_total,status,checkpoint_run,accuracy_end_t0,accuracy_start,entropy_end_t0,alignment_end_t0,min_step_cosine,source
+43q7oos2,dcsm_diffusion_supcon_v0,supcon,500,train,0,,empty (no training step logged),,,,,,,DCSM/wandb/run-20260514_150948-43q7oos2/run-43q7oos2.wandb
+bmljhj61,dcsm_diffusion_supcon_v0,supcon,100,train,100,16.2555,complete,,,,,,,DCSM/wandb/run-20260514_151610-bmljhj61/run-bmljhj61.wandb
+a5l8r648,dcsm_diffusion_supcon_v0,supcon,100,eval,,,complete,bmljhj61,0.00986328,0.00927734,4.47855,-0.0020872,0.999154,DCSM/wandb/run-20260514_153300-a5l8r648/run-a5l8r648.wandb
+67x25lz0,dcsm_diffusion_supcon_v0,supcon,100,train,100,13.6186,complete,,,,,,,DCSM/wandb/run-20260514_155154-67x25lz0/run-67x25lz0.wandb
+e6hb8294,dcsm_diffusion_supcon_v0,supcon,100,eval,,,complete,67x25lz0,0.00341797,0.00800781,4.47199,0.0015164,0.999799,DCSM/wandb/run-20260514_155600-e6hb8294/run-e6hb8294.wandb
+yugor9b4,dcsm_diffusion_infomax_v0,infomax,100,train,100,0.0269936,complete,,,,,,,DCSM/wandb/run-20260514_155924-yugor9b4/run-yugor9b4.wandb
+q25q19nj,dcsm_diffusion_infonce_v0,infonce,100,train,7,-899.142,stopped at epoch 7,,,,,,,DCSM/wandb/run-20260514_160558-q25q19nj/run-q25q19nj.wandb
+em990jzk,dcsm_diffusion_supcon_v0,supcon,100,eval,,,complete,67x25lz0,0.0171875,0.012207,4.47453,0.000645514,0.999875,DCSM/wandb/run-20260514_160905-em990jzk/run-em990jzk.wandb
+i5msnthk,dcsm_diffusion_infomax_v0,infomax,100,eval,,,accuracy not logged,yugor9b4,,,,,0.999254,DCSM/wandb/run-20260514_163344-i5msnthk/run-i5msnthk.wandb

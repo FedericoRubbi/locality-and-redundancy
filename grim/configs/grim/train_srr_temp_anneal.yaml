@@ -1,0 +1,34 @@
+run_name: "srr_temp_anneal_tinyimagenet"
+model:
+  channels: 256
+  stem_strides: [2, 2]
+  num_blocks: 3
+  time_dim: 128
+  embed_dim: 1024
+  pool: 2
+  delta_task: 0.5
+  alpha: 0.5
+  dropout: 0.0
+  tangent_projection: true
+training:
+  dataset: "tiny_imagenet"
+  num_workers: 11
+  batch_size: 512
+  epochs: 100
+  warmup_epochs: 10
+  lr: 0.001
+  final_lr: 0.0
+  weight_decay: 0.0001
+  T: 8
+  temperature: 0.1
+  temperature_schedule:
+    temp_high: 0.2
+    temp_low: 0.05
+  detach_state: false
+  loss_at_zero: false
+  use_ema: false
+  ema_momentum: 0.996
+  use_pcgrad: false
+  grad_log_interval: 50
+  eval_every: 20
+  amp: true

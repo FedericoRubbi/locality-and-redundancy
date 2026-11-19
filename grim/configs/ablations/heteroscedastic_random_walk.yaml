@@ -1,0 +1,19 @@
+accelerator:
+  mixed_precision: 'no'
+experiment_name: ablation-heteroscedastic_random_walk
+rde:
+  gamma: 1.02
+  v_max: 0.1
+  renormalize: true
+training:
+  sign_bias: 0.2
+  batch_size: 1024
+  dataset: cifar10
+  embed_dim: 128
+  epochs: 30
+  lr: 0.005
+  num_workers: 2
+  temperature: 0.1
+wandb:
+  entity: null
+  project: rde-ablation

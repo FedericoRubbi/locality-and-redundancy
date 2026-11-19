@@ -1,0 +1,26 @@
+experiment_name: "ccrd_pretrain_cifar100_hybrid"
+
+model:
+  patch_size: 2
+  image_size: 32
+  embed_dim: 384
+  depth: 4
+  num_heads: 8
+  mlp_ratio: 2.0
+  proj_dim: 384
+
+data:
+  dataset: "cifar100"
+  batch_size: 256
+  num_workers: 8
+
+training:
+  epochs: 100
+  learning_rate: 3.0e-4
+  weight_decay: 0.05
+  temperature: 0.1
+  mixed_precision: "bf16"
+
+wandb:
+  project: "dcsm"
+  entity: null

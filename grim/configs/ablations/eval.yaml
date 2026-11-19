@@ -1,0 +1,12 @@
+evaluation:
+  timing: true
+  max_eval_samples: 8192
+  probe_max_samples: 8192
+  probe_epochs: 25
+  probe_lr: 0.005
+  probe_batch_size: 512
+  uniformity_max_samples: 4096
+  uniformity_block_size: 2048
+  uniformity_t: 2.0
+  effective_rank_max_samples: 8192
+  representational_drift_max_samples: 8192
